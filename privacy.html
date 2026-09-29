@@ -189,7 +189,9 @@
                     duration, reminders, repeat rules and completion history),
                     <strong>projects</strong> (name, colour and icon) and
                     <strong>calendar events</strong> (title, description, location, start and end
-                    time, category, attendees you add, reminders and repeat rules).
+                    time, category, attendees you add, reminders and repeat rules) and
+                    <strong>timetables</strong> (plan name, daily or weekly layout, and each time
+                    slot's title, times, days, colour, icon, note and reminder setting).
                   </span>
                 </div>
               </div>
@@ -222,9 +224,12 @@
                 <div class="row__body">
                   <span class="row__title">Notifications</span>
                   <span class="row__text">
-                    If you allow notifications, we store a push token for your device so reminders
-                    reach it, along with the in-app notification inbox (for example "Task due in
-                    15 minutes") and whether each one has been read.
+                    Timetable reminders (15 minutes before and when each slot starts) are scheduled
+                    <strong>on your device</strong> by the phone's own notification system; no
+                    server sends them. If you allow notifications for other reminders, we store a
+                    push token for your device so they reach it, along with the in-app
+                    notification inbox (for example "Task due in 15 minutes") and whether each
+                    one has been read.
                   </span>
                 </div>
               </div>
@@ -241,6 +246,21 @@
                     app</strong> (a date only, no activity detail), and our servers keep short
                     operational logs (request time, route, status and errors) with credentials
                     removed.
+                  </span>
+                </div>
+              </div>
+              <div class="row">
+                <span class="tone tone--sky"><svg class="ic"><use href="#i-globe" /></svg></span>
+                <div class="row__body">
+                  <span class="row__title">Approximate region (country and city)</span>
+                  <span class="row__text">
+                    To show your country's holidays, each time you open the app we work out your
+                    <strong>approximate country and city</strong>. It comes from your network
+                    (our hosting provider estimates it from your IP address), or else from your
+                    phone's time zone and language settings. We store only the country, city and
+                    when it was worked out, not the IP address used. Dayvo <strong>never asks for
+                    or uses your device location (GPS)</strong>. You can choose a different country
+                    in <strong>Settings → Calendar</strong>.
                   </span>
                 </div>
               </div>
@@ -272,7 +292,7 @@
             </div>
             <p>Dayvo does not ask for, collect or access:</p>
             <ul class="chips chips--no">
-              <li>Precise or approximate GPS location</li>
+              <li>GPS or precise device location</li>
               <li>Contacts or address book</li>
               <li>Photos, camera or microphone</li>
               <li>Advertising identifiers</li>

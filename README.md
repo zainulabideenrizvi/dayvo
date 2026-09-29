@@ -12,19 +12,18 @@ app's design tokens (Green theme, Plus Jakarta Sans, soft cards, pill buttons, h
 
 ## Publishing (GitHub Pages)
 
-`.github/workflows/legal-pages.yml` deploys this folder on every push to `main` that touches it.
-One-time setup: **GitHub repo → Settings → Pages → Source: GitHub Actions**, then push (or run the
-workflow manually). URLs:
+Hosted from the separate public repo `dayvo`, which holds a copy of this folder at its root.
+Setup: **repo → Settings → Pages → Source: Deploy from a branch → `main` / `(root)`**. After
+editing here, copy the changed files to that repo and push. URLs:
 
 ```
-https://zainulabideen041.github.io/Schedule-App/
-https://zainulabideen041.github.io/Schedule-App/privacy.html
-https://zainulabideen041.github.io/Schedule-App/terms.html
-https://zainulabideen041.github.io/Schedule-App/delete-account.html
+https://zainulabideen041.github.io/dayvo/
+https://zainulabideen041.github.io/dayvo/privacy.html
+https://zainulabideen041.github.io/dayvo/terms.html
+https://zainulabideen041.github.io/dayvo/delete-account.html
 ```
 
-GitHub Pages on a **private** repository needs a paid GitHub plan. Otherwise, copy this folder to a
-separate public repo and enable Pages there (Source: deploy from branch, root).
+`.nojekyll` makes Pages serve the files as-is instead of running them through Jekyll.
 
 For the OAuth consent screen, add `zainulabideen041.github.io` under *Authorized domains*; Google
 verification also asks you to verify it in Search Console (HTML-file method works on Pages).
